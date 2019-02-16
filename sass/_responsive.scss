@@ -138,10 +138,15 @@
     }
 
     .posts {
+        &__latest_block {
+            text-align: center;
+        }
+
         &__latest_item {
+            width: 242px;
 
             &:not(:last-child) {
-                margin-right: 15px;
+                margin-left: 15px;
             }
         }
     }
