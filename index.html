@@ -17,12 +17,13 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
 
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
     <header class="head">
         <div class="head__banner" style="background-image: url('images/temp/banner-photo.jpg')">
-
             <div class="head__block container pr">
                 <div class="head__top clear-fix">
                     <h1 class="title fl">
@@ -87,16 +88,13 @@
                         <button href="#" class="btn trans-color trans-backgroundColor fs14 fb dib">get started</button>
                     </section>
                 </div>
-
             </div>
-
         </div>
     </header>
 
     <main class="main__container">
         <div class="skills container">
             <div class="skills__container tc">
-
                 <a href="#" class="skills__block dib">
                     <span class="skills__title skills__title_design trans-color db fs22 pr sprite-a sprite-b">Web & App Design</span>
                     <span class="skills__text db fs14 pr">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</span>
@@ -110,7 +108,6 @@
                     <span class="skills__title skills__title_marketing trans-color db fs22 pr sprite-a sprite-b">Marketing</span>
                     <span class="skills__text db fs14 pr">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</span>
                 </a>
-
             </div>
         </div>
 
@@ -261,7 +258,6 @@
                     </div>
                 </div>
                 <a href="#" class="btn trans-color trans-backgroundColor fs14 fb dib">load more</a>
-
             </div>
         </div>
 
@@ -292,23 +288,23 @@
             <div class="counter__container container">
                 <ul class="counter__list v-scroll">
                     <li class="counter__item counter__item_clients sprite-b sprite-a dib pr">
-                        <p class="counter__live">3587</p>
+                        <span class="counter__live">3587</span>
                         <p class="counter__caption fs14">Satisfied Clients</p>
                     </li>
                     <li class="counter__item counter__item_coffe sprite-b sprite-a dib pr">
-                        <p class="counter__live">207</p>
+                        <span class="counter__live">207</span>
                         <p class="counter__caption fs14">Cups of coffee</p>
                     </li>
                     <li class="counter__item counter__item_posts sprite-b sprite-a dib pr">
-                        <p class="counter__live">2500</p>
+                        <span class="counter__live">2500</span>
                         <p class="counter__caption fs14">Blog posts</p>
                     </li>
                     <li class="counter__item counter__item_likes sprite-b sprite-a dib pr">
-                        <p class="counter__live">873</p>
+                        <span class="counter__live">873</span>
                         <p class="counter__caption fs14">Likes</p>
                     </li>
                     <li class="counter__item counter__item_launch sprite-b sprite-a dib pr">
-                        <p class="counter__live">900</p>
+                        <span class="counter__live">900</span>
                         <p class="counter__caption fs14">We launched</p>
                     </li>
                 </ul>
@@ -320,7 +316,7 @@
                 <h2 class="posts__title tc">Recent Posts.</h2>
                 <p class="posts__text fs16 tc">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
                 <div class="posts__latest_block">
-                    <ul class="posts__latest_list v-scroll">
+                    <ul class="posts__latest_list v-scroll owl-carousel owl-theme">
                         <li class="posts__latest_item dib">
                             <div class="posts__latest_image pr" style="background-image: url('images/posts_1.png')">
                                 <div class="posts__date pa">
@@ -429,5 +425,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.numscroll.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/my.plugin.js"></script>
+
 </body>
 </html>
