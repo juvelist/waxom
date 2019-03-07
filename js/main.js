@@ -30,6 +30,7 @@ $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 });
 
+
 // tab
 $('.projects__taps .projects__link').click(function(event){
     event.preventDefault();
@@ -41,8 +42,8 @@ $('.projects__taps .projects__link').click(function(event){
         var tab = $( that.attr('href') ),
             tabParent = that.parents('.projects__taps');
 
-        tabParent.parent('.projects__container').find('> .projects__latest_block:visible').addClass('dn');
-        tab.removeClass('dn');
+        tabParent.parent('.projects__container').find('> .projects__latest_block:visible').addClass('dn').fadeOut(0);
+        tab.fadeIn(600).removeClass('dn');
 
         tabParent.find('.projects__link.projects__active').removeClass('projects__active');
         that.addClass('projects__active');
